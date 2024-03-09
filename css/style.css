@@ -7,10 +7,6 @@ body{
     margin: 0 100px;
 }
 
-section{
-    margin-top: 60px;
-    margin-bottom: 60px;
-}
 /* Navbar Start */
 .header{
     display: flex;
@@ -111,10 +107,13 @@ section{
 
 /* Popular Tour */
 .popular-team {
+    margin-top: 60px;
+    margin-bottom: 60px;
     display: flex;
     align-items: center;
     gap: 25px;
     justify-content: space-evenly;
+    
 }
 
 .popular-team-content h1{
@@ -139,6 +138,7 @@ section{
     font-size: 18;
     font-weight: 700;
     color: #fff;
+    border-radius: 5px;
 }
 
 /* Destination Start */
@@ -172,6 +172,8 @@ section{
 /* Choose us Start */
 .choose-us-content{
     text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .choose-us-content h1{
@@ -209,6 +211,8 @@ section{
 
 /* Perfect Place */
 .perfect-place {
+    margin-top: 60px;
+    margin-bottom: 60px;
     display: flex;
     align-items: center;
     gap: 25px;
@@ -233,6 +237,23 @@ section{
 .perfect-place-img img{
     border-radius: 10px;
 }
+
+/* Our Recommandeation start */
+.recommandeation{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.recommandeation-content{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.img-container {
+    display: flex;
+    gap: 25px;
+}
+
 
 /* newsletter start */
 .newsletter-content{
@@ -277,7 +298,36 @@ hr{
     color: #fff;
 }
 
+.img-box .save{
+    background-color: #FF5400;
+    width: 324px;
+    text-align: center;
+    color: #fff;
+    padding: 15px 0;
+    position: relative;
+    bottom: 200px;
+    left: 335px;
+    transform: rotate(-24deg);
+}
 
+.img-box .save h1{
+    margin-top: 0;
+}
+
+
+/* footer start */
+footer{
+    margin-top: 60px;
+    background-color: #e8e8e8;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.ftr-logo{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
 
 
 
@@ -361,5 +411,32 @@ hr{
 .choose-us-card{
     grid-template-columns: 1fr;
 }
+
+
+.newsletter-content{
+    flex-direction: column;
+}
+
+.img-box img{
+    width: 100%;
+}
+
+.img-box .save{
+    background-color: #FF5400;
+    width: 200px;
+    text-align: center;
+    color: #fff;
+    padding: 15px 0;
+    position: relative;
+    bottom: 180px;
+    left: 130px;
+    transform: rotate(-24deg);
+}
+
+.img-container{
+    flex-direction: column;
+}
+
+
 
 }
