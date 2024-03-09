@@ -110,7 +110,7 @@ section{
 }
 
 /* Popular Tour */
-.popular-team{
+.popular-team {
     display: flex;
     align-items: center;
     gap: 25px;
@@ -207,6 +207,79 @@ section{
 }
 
 
+/* Perfect Place */
+.perfect-place {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    justify-content: space-evenly;
+}
+
+.perfect-place-content h1{
+    font: 40px;
+    color: #131318;
+    margin-top: 0;
+}
+
+.perfect-place-content p{
+    padding-bottom: 15px;
+}
+
+.perfect-place-content ul > li{
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+
+.perfect-place-img img{
+    border-radius: 10px;
+}
+
+/* newsletter start */
+.newsletter-content{
+    display: flex;
+    gap: 20px;
+}
+
+.form-box h3{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.form-box{
+    border: 2px solid #FF5400;
+    padding: 20px;
+}
+hr{
+    color: #cacacc;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.form-box input[type="name"], input[type="email"]{
+    display: block;
+    width: 90%;
+    margin-bottom: 20px;
+    padding: 15px 15px;
+    background-color: #e1e1e1;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-box input[type="name"], input[type="email"]:focus{
+    outline: none;
+}
+
+.form-box input[type="submit"]{
+    width: 97%;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF5400;
+    color: #fff;
+}
+
+
+
+
 
 
 /* Mobile Responsive */
@@ -262,6 +335,14 @@ section{
     }
 
     .popular-team-img img{
+        width: 100%;
+    }
+    /* Perfect Place */
+    .perfect-place{
+        flex-direction: column;
+    }
+
+    .perfect-place img{
         width: 100%;
     }
 /* Destination Start */
