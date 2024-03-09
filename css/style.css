@@ -1,0 +1,284 @@
+*{
+    font-family: "Mulish", sans-serif;
+    font-style: normal;
+}
+
+body{
+    margin: 0 100px;
+}
+
+section{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+/* Navbar Start */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo h1{
+    font-weight: 700;
+    font-size: 36px;
+    color: #131318;
+}
+
+.world{
+    color: #FF5400;
+}
+
+.nav-item >ul{
+     display: flex;
+     align-items: center;
+}
+.nav-item >ul li{
+    list-style: none;
+    padding-right: 30px;
+    font-size: 18px;
+    color: #424247;
+}
+
+.nav-item >ul li:first-child{
+    color: #FF5400;
+    font-weight: 700;
+}
+
+.nav-item >ul li:last-child{
+    padding-right: 0;
+}
+
+/* Banner Part Start */
+.banner{
+    background-image: url(../Images/Hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.banner-content{
+    text-align: center;
+}
+
+.banner-content h1{
+    color: #fff;
+    font-size: 64px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.banner-content p{
+    color: white;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.input-field {
+    text-align: center;
+    background-color: #ffffff6b;
+    width: 70%;
+    margin: 0 auto;
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+
+
+.input-field input[type="text"], select{
+    padding: 10px 15px;
+    width: 20%;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.btn-primary {
+    padding: 10px 15px;
+    width: 20%;
+    border: none;
+    background-color: #FF5400;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* Popular Tour */
+.popular-team{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    justify-content: space-evenly;
+}
+
+.popular-team-content h1{
+    font: 40px;
+    color: #131318;
+    margin-top: 0;
+}
+
+.popular-team-content p{
+    padding-bottom: 15px;
+}
+
+.popular-team-content ul > li{
+    padding-bottom: 15px;
+}
+
+
+.btn-success {
+    padding: 10px 15px;
+    border: none;
+    background-color: #FF5400;
+    font-size: 18;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* Destination Start */
+.destination-content{
+    text-align: center;
+}
+
+.destination-content h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.destination-content p{
+    margin-bottom: 25px;
+}
+
+.first-row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.second-row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+/* Choose us Start */
+.choose-us-content{
+    text-align: center;
+}
+
+.choose-us-content h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.choose-us-content p{
+    margin-bottom: 25px;
+}
+
+.choose-us-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+}
+
+.choose-us-card .row1, .row3{
+    background-color: #fbb4631b;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.choose-us-card .row2{
+    background-color: #29cdf628;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.choose-us-card .row3{
+    align-items: center;
+}
+
+
+
+
+/* Mobile Responsive */
+
+
+@media  screen and (max-width: 600px) {
+    body{
+        margin: 0 30px;
+    }
+    /* nav bar */
+    .header{
+        flex-direction: column;
+    }
+
+    .nav-item >ul{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-item >ul li{
+        padding-right: 0px;
+    }
+
+    /* banner Part */
+
+    .banner{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .banner-content h1{
+        font-size: 22px;
+    }
+
+    .input-field{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .input-field input[type="text"]{
+        width: 88%;
+    }    
+    .input-field select{
+        width: 100%;
+    }
+    .btn-primary{
+        width: 100%;
+    }
+
+    /* Popular Team */
+    .popular-team{
+        flex-direction: column;
+    }
+
+    .popular-team-img img{
+        width: 100%;
+    }
+/* Destination Start */
+.first-row{
+    grid-template-columns: 1fr;
+}
+.second-row{
+    grid-template-columns: 1fr;
+}
+
+.destination-img-grid img{
+    width: 100%;
+    height: 200px;
+}
+
+.choose-us-card{
+    grid-template-columns: 1fr;
+}
+
+}
